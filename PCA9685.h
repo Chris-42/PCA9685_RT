@@ -175,9 +175,9 @@ public:
 
 private:
   //  DIRECT CONTROL
-  void    writeReg(uint8_t reg, uint8_t value);
-  void    writeReg2(uint8_t reg, uint16_t a, uint16_t b);
-  uint8_t readReg(uint8_t reg);
+  virtual void    writeReg(uint8_t reg, uint8_t value);
+  virtual void    writeReg2(uint8_t reg, uint16_t a, uint16_t b);
+  virtual uint8_t readReg(uint8_t reg);
 
   uint8_t _address;
   int     _error;
