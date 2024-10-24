@@ -173,7 +173,7 @@ public:
   int I2C_SoftwareReset(uint8_t method);  //  0 or 1
 
 
-private:
+protected:
   //  DIRECT CONTROL
   virtual void    writeReg(uint8_t reg, uint8_t value);
   virtual void    writeReg2(uint8_t reg, uint16_t a, uint16_t b);
